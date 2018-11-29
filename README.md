@@ -16,6 +16,7 @@ Os modelos KNN e SVM serão criados na mesma pasta que contém main.ipynb.
 O script model_run.py é o responsável por executar os modelos utilizando novos dados de entrada. Em um terminal, execute o comando "python model_run.py" passando como parâmetros os dados de entrada, o caminho do modelo (KNN, SVM, ou algum outro que tenha sido criado) e o nome do arquivo de saída.
 
 Os parâmetros são descritos como:
+
 | Parâmetro | Descrição |
 | ------ | ------ |
 | -i / --input | caminho para os dados de entrada |
