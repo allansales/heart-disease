@@ -13,7 +13,7 @@ $ jupyter notebook main.ipynb
 Os modelos KNN e SVM serão criados na mesma pasta que contém main.ipynb. 
 
 ## Execução
-O script model_run.py é o responsável por executar os modelos utilizando novos dados de entrada. Em um terminal, execute o comando "python model_run.py" passando como parâmetros os dados de entrada, o caminho do modelo (KNN, SVM, ou algum outro que tenha sido criado) e o nome do arquivo de saída.
+O script model_run.py é o responsável por executar os modelos utilizando novos dados de entrada. Em um terminal, execute o comando "python model_run.py" passando como parâmetros os dados de entrada, o caminho do modelo (KNN, SVM, ou algum outro que tenha sido criado) e o nome do arquivo de saída. Caso o modelo de previsão não seja explicitado, o script aplica uma regressão logística aos dados.
 
 Os parâmetros são descritos como:
 
@@ -23,7 +23,11 @@ Os parâmetros são descritos como:
 | -m / --model | caminho para o modelo a ser executado |
 | -o / --output | caminho para o resultado da classificação |
 
-Exemplo:
+Exemplo com KNN:
 ```sh
 $ python model_run.py -i test_data.csv -m model_train/knn.joblib -o results.csv
+```
+Exemplo com Regressão Logística, apenas não explicitando o modelo:
+```sh
+$ python model_run.py -i test_data.csv -o results.csv
 ```
