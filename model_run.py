@@ -37,7 +37,6 @@ if(args.model != None):
 
     # Predict heart disease
     pred = clf.predict(new_data)
-    print "previ outra coisa"
 
 else:
     def sigmoid(x):
@@ -58,7 +57,6 @@ else:
 
     # predict heart disease
     pred = prob.apply(define_class)
-    print "previ logit"
 
 # Add prediction to raw data
 new_data = new_data.assign(chd=pred)
