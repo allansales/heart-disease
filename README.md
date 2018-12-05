@@ -1,5 +1,5 @@
 # Execução do modelo de classificação de doenças cardíacas
-Criação e execução de modelos KNN e SVM para a classificação de doenças cardíacas em homens da África do Sul.
+Criação e execução de modelos KNN, SVM e Regressão Logística para a classificação de doenças cardíacas em homens da África do Sul.
 
 Para criar os modelos de classificação, [este](https://blog.goodaudience.com/heart-disease-prediction-aa656f2db585) artigo, criado com base [neste repositório](https://github.com/sahilverma0696/heart-disease-prediction) foi utilizado como referência.
 
@@ -10,7 +10,7 @@ O treinamento dos modelos se dá com a execução das celulas do script de main.
 $ jupyter notebook main.ipynb
 ```
 
-Os modelos KNN e SVM serão criados na mesma pasta que contém main.ipynb. 
+Os modelos KNN, SVM e Logit serão criados na mesma pasta que contém main.ipynb. 
 
 ## Execução
 O script model_run.py é o responsável por executar os modelos utilizando novos dados de entrada. Em um terminal, execute o comando "python model_run.py" passando como parâmetros os dados de entrada, o caminho do modelo (KNN, SVM, ou algum outro que tenha sido criado) e o nome do arquivo de saída. Caso o modelo de previsão não seja explicitado, o script aplica uma regressão logística aos dados.
